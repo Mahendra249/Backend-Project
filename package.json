@@ -1,0 +1,15 @@
+{
+  "name": "chaicode",
+  "version": "1.0.0",
+  "description": "a backend at mscode ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javaschipt",
+    "backend"
+  ],
+  "author": "MS",
+  "license": "ISC"
+}
