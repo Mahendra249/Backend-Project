@@ -27,4 +27,13 @@ app.use(cookieParser())
 // for public folder data uses 7
 app.use(express.static("public"))
 
+// routes import 
+
+import userRouter from "./routes/user.routes.js"
+
+//routes decelaration 
+
+app.use("/api/v1/users",userRouter)
+
+
 export { app }

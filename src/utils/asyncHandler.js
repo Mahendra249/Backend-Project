@@ -2,13 +2,13 @@
 
 
 const asyncHandler = (requestHandler) =>{
-   (req,res,next)=>{
-    Promise.resolve(requestHandler(req,res,next)).catch((err)=> next(EvalError))
+   return (req,res,next)=>{
+    Promise.resolve(requestHandler(req,res,next)).catch((err)=> next(err))
    }
 }
 export{asyncHandler}
 
-
+//type of higher order funtion 
 // const asyncHandler=()=>{}
 // const asyncHandler=(func)=>{()=>{}}
 // const asyncHandler=(func)=> async () =>{}
